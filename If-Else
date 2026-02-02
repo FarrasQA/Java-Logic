@@ -1,0 +1,72 @@
+package org.example;
+
+public class TestIfElse {
+    public static void main(String[] args) {
+        System.out.println("Test IF-ELSE");
+
+        //SingleIf();
+        //IfElse();
+        //IfElseIfElse();
+        NestedIf();
+        }
+
+        static void SingleIf(){
+            System.out.println("SINGLE IF");
+            System.out.println("Cek apakah umur sudah 17 tahun (boleh buat SIM)");
+
+            int umur = 11;
+            System.out.println("Umur: " + umur);
+
+            if (umur >= 17) {
+                System.out.println("Anda boleh membuat SIM");
+            }
+            System.out.println();
+        }
+        static void IfElse() {
+            System.out.println("IF-ELSE");
+            System.out.println("Cek ikut remedial (Nilai maksimal 60)");
+
+            int nilai = 30;
+            System.out.println("Nilai: " + nilai);
+
+            if (nilai <=60) {
+                System.out.println("Ikut Remedial. Persiapkan dengan baik.");
+            } else {
+                System.out.println("Selamat Anda bebas Remedial!");
+            }
+            System.out.println();
+        }
+        static void IfElseIfElse() {
+            System.out.println("IF-ELSE IF-ELSE");
+            System.out.println("Level Kedinginan Freezer");
+
+            int SuhuFreezer = 1;
+            System.out.println("Suhu: -" + SuhuFreezer);
+            System.out.println("Status: ");
+
+            if (SuhuFreezer >= 25) {
+                System.out.println("AMAN - Dingin Banget");
+            } else if (SuhuFreezer >= 18) {
+                System.out.println("STANDAR - Dinginnya pas");
+            } else if (SuhuFreezer >= 5) {
+                System.out.println("HATI-HATI - Segera cek berkala produk daging");
+            } else {
+                System.out.println("BAHAYA - Produk DAGING cepat busuk");
+            }
+            System.out.println();
+        }
+        static void NestedIf() {
+            boolean UdahBayarTiket = false;
+            boolean BawaBajuGanti = true;
+
+            if (UdahBayarTiket) {
+                if (BawaBajuGanti) {
+                    System.out.println("Boleh berenang");
+                } else {
+                    System.out.println("Tidak bawa baju ganti, tidak boleh berenang");
+                }
+            } else {
+                System.out.println("Belum bayar, tidak boleh berenang");
+            }
+        }
+    }
