@@ -1,0 +1,36 @@
+package org.example;
+
+public class TestSwitchCase {
+    public static void main(String[] args) {
+        System.out.println("Switch Case");
+
+        int NomorMenu = 3;
+        String NamaMenu;
+
+        System.out.println("Nomor Menu: " + NomorMenu);
+        System.out.println("Nama Menu: ");
+
+        switch (NomorMenu) {
+            case 1:
+                NamaMenu = "Nasi Goreng";
+                break;
+            case 2:
+                NamaMenu = "Bakso";
+                break;
+            case 3:
+                NamaMenu = "Sate";
+                break;
+            case 4:
+                NamaMenu = "Nasi Kuning";
+                break;
+            case 5:
+                NamaMenu = "Kebab";
+                break;
+            default:
+                NamaMenu = "Menu Tidak Tersedia";
+                break;
+        }
+        System.out.println(NamaMenu);
+        System.out.println();
+    }
+}
